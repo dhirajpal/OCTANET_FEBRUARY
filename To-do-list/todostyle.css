@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: url(img3.jpg)no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header{
+    position: relative;
+    top: 0%;
+    width: 100%;
+    padding: 20px 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo{
+    position: relative;
+    color: #000000;
+    font-size: 35px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 1px;
+    left: 100px;
+}
+
+header .navigation a{
+    color: #000000;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 1px 10px;
+    border-radius: 20px;
+    transition: 0.3s;
+    transition-property: background;
+}
+
+header .navigation a:not(:last-child){
+    margin-right: 30px;
+}
+
+header .navigation a:hover{
+    background: #21c2f3;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 300px;
+    box-shadow: 3px 3px 3px rgba(0.0.0.0.15);
+    border-top: 5px solid #000000;
+    border-bottom: 5px solid #000000;
+    justify-content: center;
+    margin-left: 500px;
+}
+ 
+.todo{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    background-color: rgba(209, 165, 165, 0.671);
+}
+
+.todo_value{
+    background: #eeeeee;
+    border: none;
+    outline: none;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    font-weight: 600;
+    font-size: 20px;
+    flex-grow: 1;
+}
+
+ .todo:has(.todo_checkbox:checked) {
+    color: #555555;
+    background: #8ec2b7b0;
+    text-decoration: line-through;
+    order: 1;
+ }
